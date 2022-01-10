@@ -5,6 +5,7 @@ const path = require("path");
 const chalk = require("chalk");
 const bodyParser = require("body-parser");
 const { PORT, MONGODB_URI } = process.env;
+const Chart = require('chart.js');
 
 const app = express();
 app.set("view engine", "ejs");
