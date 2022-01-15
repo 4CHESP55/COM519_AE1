@@ -1,0 +1,45 @@
+[
+    {
+    "first name": "Paul",
+    "last name": "Chester",
+    "email": "paul.chester@leidos.com",
+    "competencies" : [
+        {
+            "competency": "Requirements Elicitation & Validation",
+            "level": "Entry"
+          },
+          {
+            "competency": "Estimation",
+            "level": "Entry"
+          },
+          {
+            "competency": "Software Architecture & Design",
+            "level": "Entry"
+          },
+          {
+            "competency": "Programming",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Database Engineering",
+            "level": "Entry"
+          },
+          {
+            "competency": "Human Factors",
+            "level": "Entry"
+          },
+          {
+            "competency": "Software Test Engineering",
+            "level": "Entry"
+          },
+          {
+            "competency": "Technical Team Collaboration",
+            "level": "Entry"
+          },
+          {
+            "competency": "Technical Decision Making & Trade Studies",
+            "level": "Entry"
+          }
+    ]
+}
+]

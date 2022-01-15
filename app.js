@@ -5,12 +5,13 @@ const path = require("path");
 const chalk = require("chalk");
 const bodyParser = require("body-parser");
 const { PORT, MONGODB_URI } = process.env;
-const Chart = require('chart.js');
+
+const dashboardController = require("./controllers/dashboard");
 
 const app = express();
 app.set("view engine", "ejs");
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on("error", (err) => {
   console.error(err);
   console.log(
@@ -28,6 +29,15 @@ app.get("/", (req, res) => {
     res.render("index", { errors: {} });
   });
 
+  app.get("/login", (req, res) => {
+    res.render("login", { errors: {} });
+  });
+
+  app.get("/register", (req, res) => {
+    res.render("register", { errors: {} });
+  });
+
+  app.get("/dashboard", dashboardController.list);
 
 app.listen(PORT, () => {
     console.log(
