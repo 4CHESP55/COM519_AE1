@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const { PORT, MONGODB_URI } = process.env;
 
 const dashboardController = require("./controllers/dashboard");
+const rolesController = require("./controllers/roles");
 
 const app = express();
 app.set("view engine", "ejs");
@@ -38,6 +39,7 @@ app.get("/", (req, res) => {
   });
 
   app.get("/dashboard", dashboardController.list);
+  app.get("/roles", rolesController.list);
 
 app.listen(PORT, () => {
     console.log(

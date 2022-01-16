@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <title>World Wines</title>
+
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <link href="css/album.css" rel="stylesheet" />
+</head>
+
+<body>
+    <%- include('common/header'); -%>
+        <section class="gradient-custom p-4 h-100">
+            <div class="container bg-light">
+
+
+
+                <h1 class="mx-auto"> Roles </h1>
+                <hr>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <% roles.forEach(role=> {
+
+                            %>
+
+                            <button class="nav-link" id="<%= role._id %>-tab" data-bs-toggle="tab"
+                                data-bs-target="#<%= role._id %>" type="button" role="tab"
+                                aria-controls="<%= role._id %>" aria-selected="true">
+                                <%= role._id %>
+                            </button>
+
+                            <% }); %>
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <% roles.forEach(role=> {
+
+                        %>
+                        <div class="tab-pane fade" id="<%= role._id %>" role="tabpanel"
+                            aria-labelledby="<%= role._id %>-tab">
+                            <div class="col-md-12">
+                                <center>
+                                    <h3><b>
+                                            <%= role._id %>:
+                                        </b>
+                                        <%= role.role %>
+                                    </h3>
+                                </center>
+                                <hr>
+                            </div>
+
+                            <% role.competencies.forEach(competency=> {
+
+                                %>
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        <%= competency.competency %>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="progress">
+                                            <% if (competency.level=='Entry' ) { %>
+                                                <div class="progress-bar" role="progressbar" style="width: 25%;"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Entry</div>
+                                                <% } %>
+                                                    <% if (competency.level=='Intermediate' ) { %>
+                                                        <div class="progress-bar" role="progressbar" style="width: 50%;"
+                                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                            Intermediate
+                                                        </div>
+                                                        <% } %>
+                                                            <% if (competency.level=='Advanced' ) { %>
+                                                                <div class="progress-bar" role="progressbar"
+                                                                    style="width: 75%;" aria-valuenow="75"
+                                                                    aria-valuemin="0" aria-valuemax="100">Advanced</div>
+                                                                <% } %>
+                                                                    <% if (competency.level=='Expert' ) { %>
+                                                                        <div class="progress-bar" role="progressbar"
+                                                                            style="width: 100%;" aria-valuenow="100"
+                                                                            aria-valuemin="0" aria-valuemax="100">Expert
+                                                                        </div>
+                                                                        <% } %>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <% }); %>
+                        </div>
+                        <% }); %>
+                </div>
+                </div>
+                </section>
+
+
+
+
+
+
+                <!-- PAGINATION ARTICLE: https://evdokimovm.github.io/javascript/nodejs/mongodb/pagination/expressjs/ejs/bootstrap/2017/08/20/create-pagination-with-nodejs-mongodb-express-and-ejs-step-by-step-from-scratch.html-->
+                <!--- https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be-->
+                <%- include('common/footer') -%>
+</body>
+
+</html>
