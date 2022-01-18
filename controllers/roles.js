@@ -7,7 +7,7 @@ exports.list = async (req, res) => {
         const roles = await Role.aggregate([
             {
               $group: {
-                _id: '$career level', 
+                _id: '$career', 
                 role: {
                   $first: '$role'
                 }, 

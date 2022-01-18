@@ -1,386 +1,338 @@
 [
   {
-    "competency": "Configuration Management",
-    "description": "Establishes the baseline at the appropriate project cycle control gates and manages the system configuration to control changes from the baseline.",
+    "competency": "Writing code",
+    "description": "Able to write code to the correct standard",
     "level": "Entry",
-    "indicator": "Has awareness of configuration management tools and the purpose and process of configuration management."
+    "indicator": "Writes code with testability, readability, edge cases, and errors in mind."
   },
   {
-    "competency": "Configuration Management",
-    "description": "Establishes the baseline at the appropriate project cycle control gates and manages the system configuration to control changes from the baseline.",
+    "competency": "Writing code",
+    "description": "Able to write code to the correct standard",
     "level": "Intermediate",
-    "indicator": "Displays solid skills in configuration management sufficient to support establishment of the baseline at each project control gate and to assist in maintaining the configuration change control process in the most effective manner."
+    "indicator": "Consistently writes functions that are easily testable, easily understood by other developers, and accounts for edge cases and errors. Uses docstrings effectively."
   },
   {
-    "competency": "Configuration Management",
-    "description": "Establishes the baseline at the appropriate project cycle control gates and manages the system configuration to control changes from the baseline.",
+    "competency": "Writing code",
+    "description": "Able to write code to the correct standard",
     "level": "Advanced",
-    "indicator": "Demonstrates strong ability to establish the baseline at each project control gate accurately and to maintain the configuration change control process in the most effective manner."
+    "indicator": "Consistently writes production-ready code that is easily testable, easily understood by other developers, and accounts for edge cases and errors. Understands when it is appropriate to leave comments, but biases towards self-documenting code."
   },
   {
-    "competency": "Configuration Management",
-    "description": "Establishes the baseline at the appropriate project cycle control gates and manages the system configuration to control changes from the baseline.",
+    "competency": "Writing code",
+    "description": "Able to write code to the correct standard",
     "level": "Expert",
-    "indicator": "Leverages thorough knowledge of configuration management best practices in the industry sufficient to influence a stakeholder’s selection of the configuration management approach in order to increase the system’s efficiency and effectiveness."
+    "indicator": "Consistently writes production-ready code in a variety of programming languages that is easily testable, easily understood by other developers, and accounts for edge cases and errors. Understands when it is appropriate to leave comments, but biases towards self-documenting code."
   },
   {
-    "competency": "Database Engineering",
-    "description": "Translates system architecture and software designs into a data architecture to be used by the software. Installs, configures, tunes and operates data storage and access mechanisms to support the solution's data architecture and performance requirements.",
+    "competency": "Testing",
+    "description": "Knowledge of how to test code and implement tests",
     "level": "Entry",
-    "indicator": "Knows basic database concepts, normalization, ACID, transactions and can write simple queries."
+    "indicator": "Knows the testing pyramid. Writes unit tests, sometimes with help from more senior engineers."
   },
   {
-    "competency": "Database Engineering",
-    "description": "Translates system architecture and software designs into a data architecture to be used by the software. Installs, configures, tunes and operates data storage and access mechanisms to support the solution's data architecture and performance requirements.",
+    "competency": "Testing",
+    "description": "Knowledge of how to test code and implement tests",
     "level": "Intermediate",
-    "indicator": "Able to design normalized database schemas, keeping in mind the queries that will have to be run. Proficient in use of views, stored procedures, triggers, and user defined types. Begins to gain experience in measuring performance of queries."
+    "indicator": "Understands the testing pyramid, writes unit tests in accordance with it, as well as higher level tests with help from more senior engineers. Always tests expected edge cases and errors as well as the happy path."
   },
   {
-    "competency": "Database Engineering",
-    "description": "Translates system architecture and software designs into a data architecture to be used by the software. Installs, configures, tunes and operates data storage and access mechanisms to support the solution's data architecture and performance requirements.",
+    "competency": "Testing",
+    "description": "Knowledge of how to test code and implement tests",
     "level": "Advanced",
-    "indicator": "Able to conduct basic database administration, performance optimization, and index optimization, as well as write advanced queries. Understands how data is stored internally, how indexes are stored internally, etc."
+    "indicator": "Understands the testing pyramid, and writes unit tests as well as higher level tests in accordance with it. Always writes tests to handle expected edge cases and errors gracefully, as well as happy paths."
   },
   {
-    "competency": "Database Engineering",
-    "description": "Translates system architecture and software designs into a data architecture to be used by the software. Installs, configures, tunes and operates data storage and access mechanisms to support the solution's data architecture and performance requirements.",
+    "competency": "Testing",
+    "description": "Knowledge of how to test code and implement tests",
     "level": "Expert",
-    "indicator": "Able to integrate previously disparate databases or new data management technologies and software engineering tools to dramatically enhance a program’s reporting capabilities and create consolidated master data."
+    "indicator": "Understands their team's testing approach, and uses quality metrics to identify gaps. Works with their team to recommend solutions that are in accordance with accepted testing frameworks and the testing pyramid."
   },
   {
-    "competency": "Estimation",
-    "description": "Employs a variety of methods to estimate size, effort, duration, defects and uncertainty in software activities, and provides defensible justifications for these estimates.",
+    "competency": "Debugging",
+    "description": "Able to debug code using a range of tools",
     "level": "Entry",
-    "indicator": "Uses requirements to effectively plan and estimate required effort, size and/ or other appropriate attributes for software within a limited scope."
+    "indicator": "Understands the basics of debugging and the tools used for it."
   },
   {
-    "competency": "Estimation",
-    "description": "Employs a variety of methods to estimate size, effort, duration, defects and uncertainty in software activities, and provides defensible justifications for these estimates.",
+    "competency": "Debugging",
+    "description": "Able to debug code using a range of tools",
     "level": "Intermediate",
-    "indicator": "Estimates software effort, size, and/ or other appropriate attributes for software in large systems. Has working knowledge of both top-down and bottoms-up estimation processes, tools, and methodologies to collaboratively develop and cross-check team’s estimates."
+    "indicator": "Uses a systematic approach to debug issues located within a single service."
   },
   {
-    "competency": "Estimation",
-    "description": "Employs a variety of methods to estimate size, effort, duration, defects and uncertainty in software activities, and provides defensible justifications for these estimates.",
+    "competency": "Debugging",
+    "description": "Able to debug code using a range of tools",
     "level": "Advanced",
-    "indicator": "Exhibits in-depth knowledge of how to estimate software effort, size and/ or other appropriate attributes for software in very large and complex systems. Leads teams responsible for estimating large software projects. Utilizes historical analogous programs to decompose tasks and generate estimates with justification. Participates in selection of software estimating tools."
+    "indicator": "Proficient at using systematic debugging to diagnose all issues located to a single service. Uses systematic debugging to diagnose cross service issues, sometimes with help from more senior engineers."
   },
   {
-    "competency": "Estimation",
-    "description": "Employs a variety of methods to estimate size, effort, duration, defects and uncertainty in software activities, and provides defensible justifications for these estimates.",
+    "competency": "Debugging",
+    "description": "Able to debug code using a range of tools",
     "level": "Expert",
-    "indicator": "Leverages deep understanding of both top-down and bottoms-up software estimating methodologies to perform estimates of the most complex systems. Validates estimates provided by the team. Recommends appropriate Leidos estimating techniques and tools. Participates in industry-wide forums associated with software estimating. Capable of applying statistical techniques to the estimating process."
+    "indicator": "Proficient at using systematic debugging to diagnose all issues within the scope of their domain."
   },
   {
-    "competency": "Human Factors",
-    "description": "Researches and translates understanding of customer needs into appropriate design and solutions that enhance the user experience.",
+    "competency": "Understanding Code",
+    "description": "The ability to understand code",
     "level": "Entry",
-    "indicator": "Demonstrates knowledge of usability practices and human factors to develop mock ups of user interfaces."
+    "indicator": "Is able to gain context within team's domain with help from more senior engineers."
   },
   {
-    "competency": "Human Factors",
-    "description": "Researches and translates understanding of customer needs into appropriate design and solutions that enhance the user experience.",
+    "competency": "Understanding Code",
+    "description": "The ability to understand code",
     "level": "Intermediate",
-    "indicator": "Conducts appropriate user centered design techniques through an iterative process; modifies and adapts methods as appropriate to address specific design challenges."
+    "indicator": "Understands a portion of the team's domain, can gain sufficient context to work productively in that portion."
   },
   {
-    "competency": "Human Factors",
-    "description": "Researches and translates understanding of customer needs into appropriate design and solutions that enhance the user experience.",
+    "competency": "Understanding Code",
+    "description": "The ability to understand code",
     "level": "Advanced",
-    "indicator": "Exhibits broad knowledge of usability and user interface technologies to optimize user experience through software development. Demonstrates success developing complex user interfaces."
+    "indicator": "Understands their team's domain at a high level and can gather sufficient context to work productively within it. Has expertise in a portion of their team's domain."
   },
   {
-    "competency": "Human Factors",
-    "description": "Researches and translates understanding of customer needs into appropriate design and solutions that enhance the user experience.",
+    "competency": "Understanding Code",
+    "description": "The ability to understand code",
     "level": "Expert",
-    "indicator": "Pioneers new methodologies and customer engagement to create optimal desirable user experience within the system environment."
+    "indicator": "Has expertise in their team's domain, including the breadth of services, how they interact, and data flows between systems. Understands adjacent domains as they affect their team."
   },
   {
-    "competency": "Performance Analysis",
-    "description": "Analyzes and predicts system performance throughout the lifecycle.",
+    "competency": "Software Architecture",
+    "description": "Structures of software systems",
     "level": "Entry",
-    "indicator": "Has awareness of performance analysis techniques and the impact of conducting such analyses in meeting users’ objectives."
+    "indicator": "Is aware of overall service architecture. Designs basic functions with an awareness of overall service architecture, avoiding duplication across codebases and interface-breaking changes."
   },
   {
-    "competency": "Performance Analysis",
-    "description": "Analyzes and predicts system performance throughout the lifecycle.",
+    "competency": "Software Architecture",
+    "description": "Structures of software systems",
     "level": "Intermediate",
-    "indicator": "Leverages solid knowledge and experience in performance analysis to appropriately use techniques and measures to analyze and predict the performance of the system and its conformance to requirements."
+    "indicator": "Designs functions that are aligned with the overall service architecture."
   },
   {
-    "competency": "Performance Analysis",
-    "description": "Analyzes and predicts system performance throughout the lifecycle.",
+    "competency": "Software Architecture",
+    "description": "Structures of software systems",
     "level": "Advanced",
-    "indicator": "Utilizes strong experience in performance analysis to design and conduct complex analyses throughout the lifecycle and tie technical performance measures to other project performance metrics, ensuring implementation of the system will meet users’ objectives."
+    "indicator": "Consistently designs code that is aligned with the overall service architecture. Utilizes abstractions and code isolation effectively."
   },
   {
-    "competency": "Performance Analysis",
-    "description": "Analyzes and predicts system performance throughout the lifecycle.",
+    "competency": "Software Architecture",
+    "description": "Structures of software systems",
     "level": "Expert",
-    "indicator": "Leverages a deep understanding of performance analysis methodologies to set protocols, guidelines, and complex processes, ensuring the implementation systems meet and exceed all the users objective."
+    "indicator": "Architects services and systems using well accepted design patterns to allow for iterative, autonomous development and future scaling. Anticipates future use cases and makes design decisions that minimize the cost of future changes. "
   },
   {
-    "competency": "Programming",
-    "description": "Utilizes various programming languages and effectively operates build tools to develop algorithms that automate solutions to implement design which satisfies customer requirements",
+    "competency": "Security",
+    "description": "The methods used to secure software",
     "level": "Entry",
-    "indicator": "Demonstrates programming skills to develop new or maintain existing software applications/ systems within a limited scope."
+    "indicator": "Understands the importance of security."
   },
   {
-    "competency": "Programming",
-    "description": "Utilizes various programming languages and effectively operates build tools to develop algorithms that automate solutions to implement design which satisfies customer requirements",
+    "competency": "Security",
+    "description": "The methods used to secure software",
     "level": "Intermediate",
-    "indicator": "Proficient in programming skills. Capable of developing and/ or maintaining software using a variety of software development tools. Develops small to medium-sized software systems. Begins to gain experience measuring personal software development productivity."
+    "indicator": "Understands the importance of security. Utilizes this knowledge to ask more senior engineers for help on making decisions that may have security implications."
   },
   {
-    "competency": "Programming",
-    "description": "Utilizes various programming languages and effectively operates build tools to develop algorithms that automate solutions to implement design which satisfies customer requirements",
+    "competency": "Security",
+    "description": "The methods used to secure software",
     "level": "Advanced",
-    "indicator": "Exhibits broad knowledge of established programming techniques and tools to develop new and/ or maintain existing software. Participates in the selection of software languages best suited for the architecture of a system/ application. Understands personal software development productivity. Develops software for large systems."
+    "indicator": "Approaches all engineering work with a security lens. Actively looks for security vulnerabilities both in the code and when providing peer reviews."
   },
   {
-    "competency": "Programming",
-    "description": "Utilizes various programming languages and effectively operates build tools to develop algorithms that automate solutions to implement design which satisfies customer requirements",
+    "competency": "Security",
+    "description": "The methods used to secure software",
     "level": "Expert",
-    "indicator": "Exhibits in-depth understanding of programming technologies available in the market in order to provide the most efficient means of implementing the needed functionality. Applies statistical techniques in performing individual programming activities. Recommends programming techniques and tools for Leidos."
+    "indicator": "Actively works with the security team, as well as their own team, to refine their team's approach to security based on the organization's security strategy. Fosters a security first mindset within their own team, and leads by example."
   },
   {
-    "competency": "Requirements Analysis & Management",
-    "description": "Analyzes and manages requirements to ensure scope management and quality standards. ",
+    "competency": "Dealing with ambiguity",
+    "description": "Being able to deal with ambiguity",
     "level": "Entry",
-    "indicator": "Reviews and analyses user and software requirements. Familiar with multiple requirements techniques and notations used in requirements analysis. Performs requirements analysis on limited-size systems. Understands that changes to requirements must be approved by project management."
+    "indicator": "Usually handles risk, change, and uncertainty within their personal scope of work effectively. Usually decides and acts responsibly without having the total picture during routine business, and when in high pressure situations."
   },
   {
-    "competency": "Requirements Analysis & Management",
-    "description": "Analyzes and manages requirements to ensure scope management and quality standards. ",
+    "competency": "Dealing with ambiguity",
+    "description": "Being able to deal with ambiguity",
     "level": "Intermediate",
-    "indicator": "Applies a strong understanding of wide range of system and software requirements analysis techniques and notations. Ensures stakeholder requirements match software requirements. Performs requirements analysis on relatively complex systems. Implements requirements management processes on projects."
+    "indicator": "Handles risk, change, and uncertainty within their personal scope of work effectively. Decides and acts responsibly without having the total picture during routine business and when in high pressure situations."
   },
   {
-    "competency": "Requirements Analysis & Management",
-    "description": "Analyzes and manages requirements to ensure scope management and quality standards. ",
+    "competency": "Dealing with ambiguity",
+    "description": "Being able to deal with ambiguity",
     "level": "Advanced",
-    "indicator": "Applies broad understanding of a large variety of system and software requirements analysis techniques. Performs system and software requirements analysis on large and complex systems and components. Participates in selection of requirements analysis tools within the company. Defines requirements management processes on projects. Participates in requirements change review and approval."
+    "indicator": "Effectively handles risk, change, and uncertainty within their team. Decides and acts responsibly in their work with their team without having the total picture during routine business, as well as when in high pressure situations."
   },
   {
-    "competency": "Requirements Analysis & Management",
-    "description": "Analyzes and manages requirements to ensure scope management and quality standards. ",
+    "competency": "Dealing with ambiguity",
+    "description": "Being able to deal with ambiguity",
     "level": "Expert",
-    "indicator": "Leverages in-depth knowledge of implementing a large variety of system and software requirements analysis techniques. Performs requirements analysis on very large and complex systems. Determines requirements analysis tools for Leidos. Participates in industry-wide forums in the area of requirements analysis. Capable of applying statistical techniques to requirements analysis processes. Defines Leidos-way for requirements management processes. Participates in decision to evolve Leidos’ requirements management processes."
+    "indicator": "Effectively handles risk, change, and uncertainty across several teams. Decides and acts responsibly in their work across teams without having the total picture during routine business, as well as when in high pressure situations."
   },
   {
-    "competency": "Requirements Elicitation & Validation",
-    "description": "Gains knowledge of stakeholder needs and elicits requirements. Validates requirements with stakeholders.",
+    "competency": "Delivering Feedback",
+    "description": "The ability to deliver concise feedback",
     "level": "Entry",
-    "indicator": "Asks meaningful and appropriate questions through requirement gathering sessions to understand and document stakeholder requirements for specific scope area within a system."
+    "indicator": "Understands how to deliver praise and constructive feedback in a useful manner."
   },
   {
-    "competency": "Requirements Elicitation & Validation",
-    "description": "Gains knowledge of stakeholder needs and elicits requirements. Validates requirements with stakeholders.",
+    "competency": "Delivering Feedback",
+    "description": "The ability to deliver concise feedback",
     "level": "Intermediate",
-    "indicator": "Leverages working knowledge of the requirements development process to elicit and validate stakeholder requirements of basic systems and convert stakeholder needs into software requirements, using the appropriate software tools. Is familiar with applying group development sessions."
+    "indicator": "Delivers praise and constructive feedback to their team, teammates, and manager in a useful manner."
   },
   {
-    "competency": "Requirements Elicitation & Validation",
-    "description": "Gains knowledge of stakeholder needs and elicits requirements. Validates requirements with stakeholders.",
+    "competency": "Delivering Feedback",
+    "description": "The ability to deliver concise feedback",
     "level": "Advanced",
-    "indicator": "Applies in-depth knowledge of requirements development process to lead complex requirement elicitation sessions for large-scale systems. Translates complex stakeholder requirements into software requirements. Is experienced in leading group development requirements sessions."
+    "indicator": "Delivers praise and constructive feedback to their team, teammates, and manager in a useful manner. Delivers feedback to their team's business stakeholders when opportunities arise."
   },
   {
-    "competency": "Requirements Elicitation & Validation",
-    "description": "Gains knowledge of stakeholder needs and elicits requirements. Validates requirements with stakeholders.",
+    "competency": "Delivering Feedback",
+    "description": "The ability to deliver concise feedback",
     "level": "Expert",
-    "indicator": "Demonstrates expansive skills in leading highly complex and ambiguous requirement elicitation sessions and ensures that requirements are consistent with overall system architecture. Represents Leidos as an expert in industry wide forums related to requirements elicitation and validation. Determines appropriate requirements processes within Leidos. Capable of applying statistical techniques to the requirements elicitation process."
+    "indicator": "Fosters a culture of delivering praise and constructive feedback within their team and team's respective business stakeholders. Actively demonstrates these behaviours."
   },
   {
-    "competency": "Risk Management",
-    "description": "Applies accepted risk management approaches in order to identify, analyze, mitigate, track, document, and communicate risks. Manages project processes so the system meets an acceptable risk profile.",
+    "competency": "Effective communication",
+    "description": "Being able to communicate effectively",
     "level": "Entry",
-    "indicator": "Shows awareness of risk management approaches to identify and track risk and use risk reserves."
+    "indicator": "Communicates effectively, clearly, concisely and in an audience-oriented way, in written and verbal form. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication."
   },
   {
-    "competency": "Risk Management",
-    "description": "Applies accepted risk management approaches in order to identify, analyze, mitigate, track, document, and communicate risks. Manages project processes so the system meets an acceptable risk profile.",
+    "competency": "Effective communication",
+    "description": "Being able to communicate effectively",
     "level": "Intermediate",
-    "indicator": "Shows working ability in analyzing and tracking risks and the status of mitigation while logging risk and related performance."
+    "indicator": "Usually communicates effectively, clearly, concisely and in an audience-oriented way in written and verbal form both technical and non technical subjects, to their teammates. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication."
   },
   {
-    "competency": "Risk Management",
-    "description": "Applies accepted risk management approaches in order to identify, analyze, mitigate, track, document, and communicate risks. Manages project processes so the system meets an acceptable risk profile.",
+    "competency": "Effective communication",
+    "description": "Being able to communicate effectively",
     "level": "Advanced",
-    "indicator": "Applies strong skills to develop large and complex risk management programs as well as interact with stakeholders and subcontractor teams to keep them appraised of potential risks."
+    "indicator": "Communicates effectively, clearly, concisely in written and verbal form both technical and non technical subjects, and in an audience-oriented way. Actively listens to others and ensures they are understood. Pays attention to nonverbal communication."
   },
   {
-    "competency": "Risk Management",
-    "description": "Applies accepted risk management approaches in order to identify, analyze, mitigate, track, document, and communicate risks. Manages project processes so the system meets an acceptable risk profile.",
+    "competency": "Effective communication",
+    "description": "Being able to communicate effectively",
     "level": "Expert",
-    "indicator": "Demonstrates in-depth knowledge by reducing risk in high risk projects, and through interactions between customers and key stakeholders to ensure systems remain on track."
+    "indicator": "Is able to communicate effectively with a diverse team. Fosters a culture of clear, concise, effective, audience-oriented communication on their team, ensuring teammates actively listen to others and are understood. Actively demonstrates these behaviours. Pays attention to nonverbal communication."
   },
   {
-    "competency": "Security Practices",
-    "description": "Designs and implements software/ solutions that adhere to information security best practices. Uses accepted tools and techniques to identify security vulnerabilities and weaknesses, and manages the communication and closure of these issues.",
+    "competency": "Knowledge Sharing",
+    "description": "The ability to share knowledge",
     "level": "Entry",
-    "indicator": "Demonstrates basic knowledge of software security processes and practices to ensure data and information security."
+    "indicator": "Understands their area of work and shares their knowledge frequently with their teammates."
   },
   {
-    "competency": "Security Practices",
-    "description": "Designs and implements software/ solutions that adhere to information security best practices. Uses accepted tools and techniques to identify security vulnerabilities and weaknesses, and manages the communication and closure of these issues.",
+    "competency": "Knowledge Sharing",
+    "description": "The ability to share knowledge",
     "level": "Intermediate",
-    "indicator": "Understands best practices in software design that reduce the likelihood of security threats. Able to use dependable security tools and reliable software packages/ applications."
+    "indicator": "Understands their work domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge."
   },
   {
-    "competency": "Security Practices",
-    "description": "Designs and implements software/ solutions that adhere to information security best practices. Uses accepted tools and techniques to identify security vulnerabilities and weaknesses, and manages the communication and closure of these issues.",
+    "competency": "Knowledge Sharing",
+    "description": "The ability to share knowledge",
     "level": "Advanced",
-    "indicator": "Drives security strategies that are forward-thinking and successfully anticipates potential security risks that could result in loss or misuse of data and information."
+    "indicator": "Understands their team's domain, shares their knowledge frequently with their teammates and contributes to their team's documentation. Watches out for opportunities to share knowledge and encourages others to do the same."
   },
   {
-    "competency": "Security Practices",
-    "description": "Designs and implements software/ solutions that adhere to information security best practices. Uses accepted tools and techniques to identify security vulnerabilities and weaknesses, and manages the communication and closure of these issues.",
+    "competency": "Knowledge Sharing",
+    "description": "The ability to share knowledge",
     "level": "Expert",
-    "indicator": "n-depth knowledge of data security with a proven track record in the prevention and resolution of security threats and application of security risk mitigations. Participates in industry-wide forums associated with security practices."
+    "indicator": "Fosters a culture of documentation and knowledge sharing within their team and with their team's business stakeholders; actively demonstrates these behaviors."
   },
   {
-    "competency": "Software Architecture & Design",
-    "description": "Creates a software design that satisfies customer requirements. Uses defined representations to communicate that design to others and to enable verification of its completeness and correctness.",
+    "competency": "Teamwork",
+    "description": "Being able to work as part of a team",
     "level": "Entry",
-    "indicator": "Demonstrates capability of designing software architecture and detailed software design for software units of a limited scope."
+    "indicator": "Helps their teammates when requested. Gives or shares credit where due."
   },
   {
-    "competency": "Software Architecture & Design",
-    "description": "Creates a software design that satisfies customer requirements. Uses defined representations to communicate that design to others and to enable verification of its completeness and correctness.",
+    "competency": "Teamwork",
+    "description": "Being able to work as part of a team",
     "level": "Intermediate",
-    "indicator": "Develops software architecture for small to medium-sized software systems. Familiar with and can apply a variety of software design techniques and notations. Selects software design approach for small to medium-sized projects."
+    "indicator": "When requested, helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due."
   },
   {
-    "competency": "Software Architecture & Design",
-    "description": "Creates a software design that satisfies customer requirements. Uses defined representations to communicate that design to others and to enable verification of its completeness and correctness.",
+    "competency": "Teamwork",
+    "description": "Being able to work as part of a team",
     "level": "Advanced",
-    "indicator": "Develops software architecture for large and complex systems. Is intimately familiar with at least one software design techniques and notations. Coaches and mentors fellow team members in software design."
+    "indicator": "Sometimes helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due."
   },
   {
-    "competency": "Software Architecture & Design",
-    "description": "Creates a software design that satisfies customer requirements. Uses defined representations to communicate that design to others and to enable verification of its completeness and correctness.",
+    "competency": "Teamwork",
+    "description": "Being able to work as part of a team",
     "level": "Expert",
-    "indicator": "Develops software architecture for very large and complex software systems. Significant experience in applying a large variety of software design techniques and notations. Participates in industry-wide forums to help evolve software design methodology. Capable of applying statistical techniques to the software design process. Leverages expansive knowledge of tools to understand complexities and dependencies of software components."
+    "indicator": "Consistently helps their teammates overcome obstacles, resolve blockers, and complete work tasks. Gives or shares credit where due."
   },
   {
-    "competency": "Software Test Engineering",
-    "description": "Ensures software quality and requirements compliance through various levels of testing, including unit tests that conform to project standards for implementation style, coverage, reporting and frequency of execution.",
+    "competency": "Relationship building",
+    "description": "Being able to build relationships",
     "level": "Entry",
-    "indicator": "Has basic understanding of a variety of software unit-level testing techniques. Integrates and tests software units into engineering baselines."
+    "indicator": "Works to build strong relationships with their teammates and manager."
   },
   {
-    "competency": "Software Test Engineering",
-    "description": "Ensures software quality and requirements compliance through various levels of testing, including unit tests that conform to project standards for implementation style, coverage, reporting and frequency of execution.",
+    "competency": "Relationship building",
+    "description": "Being able to build relationships",
     "level": "Intermediate",
-    "indicator": "Designs the software test approach for small to medium sized projects. Conducts software unit, integration, and software system tests. Understands how to use requirements to develop software integration and system tests. Has basic understanding of software test tools."
+    "indicator": "Works to build strong relationships with their teammates, manager, and product counterpart."
   },
   {
-    "competency": "Software Test Engineering",
-    "description": "Ensures software quality and requirements compliance through various levels of testing, including unit tests that conform to project standards for implementation style, coverage, reporting and frequency of execution.",
+    "competency": "Relationship building",
+    "description": "Being able to build relationships",
     "level": "Advanced",
-    "indicator": "Designs and implements the software test approach for large to very large-sized projects. Leads software test groups to perform software testing on projects. Selects software test tools to be used on projects. Works with requirements developers to ensure requirements are testable. Develops tests from software system requirements."
+    "indicator": "Works to build strong relationships with their teammates, manager, as well as their teams' relevant business stakeholders."
   },
   {
-    "competency": "Software Test Engineering",
-    "description": "Ensures software quality and requirements compliance through various levels of testing, including unit tests that conform to project standards for implementation style, coverage, reporting and frequency of execution.",
+    "competency": "Relationship building",
+    "description": "Being able to build relationships",
     "level": "Expert",
-    "indicator": "Possesses deep understanding of software and system test techniques. Participates in developing Leidos-way software test techniques and tools. Participates in industry-wide forums associated with software testing techniques and tools. Capable of applying statistical techniques to the software testing process."
+    "indicator": "Works to build and improve strong relationships with their teammates, manager, their teams' relevant business stakeholders, and senior engineers across the organization. Leverages relationships to better plan for and position their team."
   },
   {
-    "competency": "Technical Decision Making & Trade Studies",
-    "description": "Performs structured trade studies to enable sound technical decisions among alternative design or process elements based on mission needs, risk, cost, technical attributes or other criteria.",
+    "competency": "Decision making",
+    "description": "Able to make critical decisions",
     "level": "Entry",
-    "indicator": "Shows awareness of trade study tools and techniques and how these contribute to sound technical decision making."
+    "indicator": "Understands the impact of biases on decision making. Understands accountability."
   },
   {
-    "competency": "Technical Decision Making & Trade Studies",
-    "description": "Performs structured trade studies to enable sound technical decisions among alternative design or process elements based on mission needs, risk, cost, technical attributes or other criteria.",
+    "competency": "Decision making",
+    "description": "Able to make critical decisions",
     "level": "Intermediate",
-    "indicator": "Utilizes working knowledge of decision analysis to support trade studies at all stages of development in order to evaluate system design alternatives and identify the best alternative based on the established criteria."
+    "indicator": "Strives to be objective and reflects on their own biases when making decisions. Holds themselves accountable for decision and outcomes."
   },
   {
-    "competency": "Technical Decision Making & Trade Studies",
-    "description": "Performs structured trade studies to enable sound technical decisions among alternative design or process elements based on mission needs, risk, cost, technical attributes or other criteria.",
+    "competency": "Decision making",
+    "description": "Able to make critical decisions",
     "level": "Advanced",
-    "indicator": "Applies strong skills in decision analysis and trade studies to design rigorous trade studies and use them to support effective decision making."
+    "indicator": "Takes ownership of decisions made in their team by helping their teammates make clear decisions in alignment with organizational goals, backing decisions made, and taking responsibility for their success. Raises awareness for how biases impact decisions and ensures accountability is practiced within their team. Demonstrates these behaviours themselves."
   },
   {
-    "competency": "Technical Decision Making & Trade Studies",
-    "description": "Performs structured trade studies to enable sound technical decisions among alternative design or process elements based on mission needs, risk, cost, technical attributes or other criteria.",
+    "competency": "Decision making",
+    "description": "Able to make critical decisions",
     "level": "Expert",
-    "indicator": "Is considered a master in evaluating highly technical design and the application of systems engineering processes throughout the lifecycle, ensuring the soundness of technical decisions."
+    "indicator": "Takes ownership of decisions made across teams by helping them make clear decisions in alignment with organizational goals, backing decisions made, and taking responsibility for their success. Raises awareness for how biases impact decisions and ensures accountability is practiced throughout those teams. Demonstrates these behaviours themselves."
   },
   {
-    "competency": "Technical Management & Planning",
-    "description": "Plans and oversees technical processes. Converts contract requirements into executable technical plans and ensures that they are implemented to satisfy customer needs.",
+    "competency": "Process thinking",
+    "description": "The thinking behind the process",
     "level": "Entry",
-    "indicator": "Participates in small scope software planning activities to develop small project plans, schedules, and budgets. Works with other software engineers to monitor planned vs. actual software project management parameters."
+    "indicator": "Understands their team's practices and processes."
   },
   {
-    "competency": "Technical Management & Planning",
-    "description": "Plans and oversees technical processes. Converts contract requirements into executable technical plans and ensures that they are implemented to satisfy customer needs.",
+    "competency": "Process thinking",
+    "description": "The thinking behind the process",
     "level": "Intermediate",
-    "indicator": "Develops project planning documentation, schedules, and budgets for small to medium-sized projects. Is familiar with a variety of software lifecycles including Iterative, Evolutionary and Agile. Familiar with Earned Value. Leads a small team of software engineers. Monitors planned vs. actual project planning parameters and develops status reports."
+    "indicator": "Sometimes thinks about team practices and processes and discusses improvements with team."
   },
   {
-    "competency": "Technical Management & Planning",
-    "description": "Plans and oversees technical processes. Converts contract requirements into executable technical plans and ensures that they are implemented to satisfy customer needs.",
+    "competency": "Process thinking",
+    "description": "The thinking behind the process",
     "level": "Advanced",
-    "indicator": "Develops project planning documentation, schedules, and budgets for large and complex projects. Is very familiar with many software lifecycles and picks an appropriate software lifecycle for the project. Leads a large team of software engineers. Designs the metrics monitoring system for software projects. Performs software project monitoring. Is aware of and may apply statistical techniques for monitoring software project status."
+    "indicator": "Regularly thinks about team practices and processes and discusses improvements with team."
   },
   {
-    "competency": "Technical Management & Planning",
-    "description": "Plans and oversees technical processes. Converts contract requirements into executable technical plans and ensures that they are implemented to satisfy customer needs.",
+    "competency": "Process thinking",
+    "description": "The thinking behind the process",
     "level": "Expert",
-    "indicator": "Has in-depth understanding of multiple technical disciplines to ensure successful and timely implementation of technical plans by allocating optimal resources and mitigating risks while improving project performance. Has deep understanding of how statistical techniques can be applied to software projects. Capable of applying statistical techniques to the software project planning and monitoring processes."
-  },
-  {
-    "competency": "Technical Team Collaboration",
-    "description": "Collaborates with team members to ensure that all final work outputs are up to par with existing standards for quality and effectiveness.",
-    "level": "Entry",
-    "indicator": "Demonstrates awareness of company-wide and software engineering-specific quality standards. Proactively and regularly solicits feedback and input from more senior team members to ensure that own work products meet all applicable standards and expectations."
-  },
-  {
-    "competency": "Technical Team Collaboration",
-    "description": "Collaborates with team members to ensure that all final work outputs are up to par with existing standards for quality and effectiveness.",
-    "level": "Intermediate",
-    "indicator": "Utilizes existing quality standards and foundational technical knowledge to conduct peer reviews of fellow team members’ work. Coaches, mentors, and provides constructive feedback to junior team members on methods for producing high quality work products."
-  },
-  {
-    "competency": "Technical Team Collaboration",
-    "description": "Collaborates with team members to ensure that all final work outputs are up to par with existing standards for quality and effectiveness.",
-    "level": "Advanced",
-    "indicator": "Applies in-depth knowledge of software requirements and designs to standardize quality procedures. Ensures that team members are familiar with current methodologies in order to ensure team outputs meet expectations. Able to lead teams focused on Joint Application Development (JAD)."
-  },
-  {
-    "competency": "Technical Team Collaboration",
-    "description": "Collaborates with team members to ensure that all final work outputs are up to par with existing standards for quality and effectiveness.",
-    "level": "Expert",
-    "indicator": "Leverages expansive experience in software engineering to design and execute team development efforts. Establishes protocols and guidelines to help guarantee that team members understand quality standards and have access to peer review and feedback from more experienced colleagues."
-  },
-  {
-    "competency": "Test Engineering",
-    "description": "Manages testing and evaluation. Develops test plans and procedures, performs the test, and analyzes and reports the results.",
-    "level": "Entry",
-    "indicator": "Shows awareness of test and evaluation procedures that assess whether systems are performing to meet specifications."
-  },
-  {
-    "competency": "Test Engineering",
-    "description": "Manages testing and evaluation. Develops test plans and procedures, performs the test, and analyzes and reports the results.",
-    "level": "Intermediate",
-    "indicator": "Exhibits solid skills in supporting the implementation of test and evaluation plans and proceduresthat assess whether systems are performing to meet specifications."
-  },
-  {
-    "competency": "Test Engineering",
-    "description": "Manages testing and evaluation. Develops test plans and procedures, performs the test, and analyzes and reports the results.",
-    "level": "Advanced",
-    "indicator": "Utilizes broad skills to implement test and evaluation plans and proceduresthat assess whether systems are performing to meet specifications."
-  },
-  {
-    "competency": "Test Engineering",
-    "description": "Manages testing and evaluation. Develops test plans and procedures, performs the test, and analyzes and reports the results.",
-    "level": "Expert",
-    "indicator": "Applies expansive knowledge of test and evaluation strategies and techniques to guide and coach the team in testing and evaluating large and highly complex systems."
+    "indicator": "Thinks about team practices and processes and regularly discusses improvements with their team. Sometimes collaborates with others to improve organizational practices and processes."
   }
  ]

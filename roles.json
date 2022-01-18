@@ -1,872 +1,416 @@
 [
-    {
-      "career level": "T1",
-      "role": "Associate Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Entry"
-    },
-    {
-      "career level": "T1",
-      "role": "Associate Software Engr",
-      "competency": "Programming",
-      "level": "Entry"
-    },
-    {
-      "career level": "T1",
-      "role": "Associate Software Engr",
-      "competency": "Database Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T1",
-      "role": "Associate Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Estimation",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Database Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Security Practices",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Human Factors",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Technical Team Collaboration",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Risk Management",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Test Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T2",
-      "role": "Software Engr",
-      "competency": "Configuration Management",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Estimation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Database Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Security Practices",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Human Factors",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Technical Team Collaboration",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Technical Management & Planning",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Risk Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Configuration Management",
-      "level": "Entry"
-    },
-    {
-      "career level": "T3",
-      "role": "Staff Software Engr",
-      "competency": "Performance Analysis",
-      "level": "Entry"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Estimation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Programming",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Database Engineering",
-      "level": "Entry"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Security Practices",
-      "level": "Entry"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Human Factors",
-      "level": "Entry"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Technical Team Collaboration",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Technical Management & Planning",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Risk Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T4",
-      "role": "Sr. Software Engr",
-      "competency": "Performance Analysis",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Estimation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Programming",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Technical Team Collaboration",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Technical Management & Planning",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Risk Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Test Engineering",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T5",
-      "role": "Principal Software Engr",
-      "competency": "Performance Analysis",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Expert"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Expert"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Estimation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Software Architecture & Design",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Programming",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Software Test Engineering",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Technical Team Collaboration",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Technical Management & Planning",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Risk Management",
-      "level": "Expert"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Test Engineering",
-      "level": "Advanced"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Expert"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "T6",
-      "role": "Sr. Principle Software Engr",
-      "competency": "Performance Analysis",
-      "level": "Expert"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Estimation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Software Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Technical Team Collaboration",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Technical Management & Planning",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Risk Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M1",
-      "role": "Software Engr Mgr",
-      "competency": "Performance Analysis",
-      "level": "Entry"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Estimation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Software Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Technical Team Collaboration",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Technical Management & Planning",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Risk Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M2",
-      "role": "Principal Software Engr Mgr",
-      "competency": "Performance Analysis",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Estimation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Software Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Technical Team Collaboration",
-      "level": "Expert"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Technical Management & Planning",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Risk Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M3",
-      "role": "Chief Engr Mgr",
-      "competency": "Performance Analysis",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Requirements Elicitation & Validation",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Requirements Analysis & Management",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Estimation",
-      "level": "Expert"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Software Architecture & Design",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Programming",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Database Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Security Practices",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Human Factors",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Software Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Technical Team Collaboration",
-      "level": "Expert"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Technical Management & Planning",
-      "level": "Expert"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Risk Management",
-      "level": "Expert"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Test Engineering",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Technical Decision Making & Trade Studies",
-      "level": "Advanced"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Configuration Management",
-      "level": "Intermediate"
-    },
-    {
-      "career level": "M4",
-      "role": "Sr Chief Engr Mgr",
-      "competency": "Performance Analysis",
-      "level": "Intermediate"
-    }
-   ]
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Writing code",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Testing",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Debugging",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Understanding Code",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Software Architecture",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Security",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Delivering Feedback",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Effective communication",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Knowledge Sharing",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Teamwork",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Relationship building",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Decision making",
+    "level": "Entry"
+  },
+  {
+    "career": "E1",
+    "role": "Associate Engineer",
+    "competency": "Process thinking",
+    "level": "Entry"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Writing code",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Testing",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Debugging",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Understanding Code",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Software Architecture",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Security",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Dealing with ambiguity",
+    "level": "Entry"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Delivering Feedback",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Effective communication",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Knowledge Sharing",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Teamwork",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Relationship building",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Decision making",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E2",
+    "role": "Engineer",
+    "competency": "Process thinking",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Writing code",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Testing",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Debugging",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Understanding Code",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Software Architecture",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Security",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Dealing with ambiguity",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Delivering Feedback",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Effective communication",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Knowledge Sharing",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Teamwork",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Relationship building",
+    "level": "Advanced"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Decision making",
+    "level": "Intermediate"
+  },
+  {
+    "career": "E3",
+    "role": "Senior Engineer",
+    "competency": "Process thinking",
+    "level": "Advanced"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Writing code",
+    "level": "Advanced"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Testing",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Debugging",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Understanding Code",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Software Architecture",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Security",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Dealing with ambiguity",
+    "level": "Advanced"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Delivering Feedback",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Effective communication",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Knowledge Sharing",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Teamwork",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Relationship building",
+    "level": "Expert"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Decision making",
+    "level": "Advanced"
+  },
+  {
+    "career": "E4",
+    "role": "Staff Engineer",
+    "competency": "Process thinking",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Writing code",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Testing",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Debugging",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Understanding Code",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Software Architecture",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Security",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Dealing with ambiguity",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Delivering Feedback",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Effective communication",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Knowledge Sharing",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Teamwork",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Relationship building",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Decision making",
+    "level": "Expert"
+  },
+  {
+    "career": "E5",
+    "role": "Senior Staff Engineer",
+    "competency": "Process thinking",
+    "level": "Expert"
+  }
+ ]

@@ -5,41 +5,62 @@
     "email": "paul.chester@leidos.com",
     "competencies" : [
         {
-            "competency": "Requirements Elicitation & Validation",
-            "level": "Entry"
-          },
-          {
-            "competency": "Estimation",
-            "level": "Entry"
-          },
-          {
-            "competency": "Software Architecture & Design",
-            "level": "Entry"
-          },
-          {
-            "competency": "Programming",
+            "competency": "Writing code",
             "level": "Intermediate"
           },
           {
-            "competency": "Database Engineering",
+            "competency": "Testing",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Debugging",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Understanding Code",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Software Architecture",
             "level": "Entry"
           },
           {
-            "competency": "Human Factors",
+            "competency": "Security",
             "level": "Entry"
           },
           {
-            "competency": "Software Test Engineering",
+            "competency": "Dealing with ambiguity",
             "level": "Entry"
           },
           {
-            "competency": "Technical Team Collaboration",
+            "competency": "Delivering Feedback",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Effective communication",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Knowledge Sharing",
+            "level": "intermediate"
+          },
+          {
+            "competency": "Teamwork",
+            "level": "Intermediate"
+          },
+          {
+            "competency": "Relationship building",
             "level": "Entry"
           },
           {
-            "competency": "Technical Decision Making & Trade Studies",
-            "level": "Entry"
+            "competency": "Decision making",
+            "level": "Advanced"
+          },
+          {
+            "competency": "Process thinking",
+            "level": "Intermediate"
           }
+
     ]
 }
 ]
