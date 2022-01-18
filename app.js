@@ -40,6 +40,10 @@ app.get("/", (req, res) => {
 
   app.get("/dashboard", dashboardController.list);
   app.get("/roles", rolesController.list);
+  app.get("/roles/delete/:id", rolesController.delete);
+
+  app.get("/update-role/:id", rolesController.edit);
+  app.post("/update-role/:id", rolesController.update);
 
 app.listen(PORT, () => {
     console.log(

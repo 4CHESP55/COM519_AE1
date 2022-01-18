@@ -51,6 +51,9 @@
                         <div class="tab-pane fade" id="<%= role._id %>" role="tabpanel"
                             aria-labelledby="<%= role._id %>-tab">
                             <div class="col-md-12">
+                                <a role="button" class="btn btn-primary" href="/roles/delete/<%= role._id %>">delete</a> 
+                            </div>
+                            <div class="col-md-12">
                                 <center>
                                     <h3>
                                         <%= role.role %>
@@ -68,7 +71,7 @@
                                         <%= competency.competency %>
 
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="progress">
                                             <% if (competency.level=='Entry' ) { %>
                                                 <div class="progress-bar" role="progressbar" style="width: 25%;"
@@ -92,6 +95,10 @@
                                                                         </div>
                                                                         <% } %>
                                         </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <a role="button" class="btn btn-primary" href="/roles/delete/<%= competency.roleId %>">Delete</a> 
+                                        <a role="button" class="btn btn-primary" href="/update-role/<%= competency.roleId %>">Update</a> 
                                     </div>
                                 </div>
 
