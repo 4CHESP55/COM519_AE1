@@ -5,6 +5,7 @@ const fs = require("fs").promises;
 const path = require("path");
 const loading = require("loading-cli");
 const { MONGODB_URI } = process.env;
+const bcrypt = require('bcrypt');
 
 
 /**
@@ -51,8 +52,13 @@ async function main() {
     const competenciesData = await fs.readFile(path.join(__dirname, "competencies.json"), "utf8");
     await db.collection("competencies").insertMany(JSON.parse(competenciesData));
 
-    const usersData = await fs.readFile(path.join(__dirname, "users.json"), "utf8");
+    const usersData = await fs.readFile(path.join(__dirname, "users.json"), "utf8");  
+
     await db.collection("users").insertMany(JSON.parse(usersData));
+
+    // Hash a default password and insert
+    const hash = await bcrypt.hash("password", 10);
+    await db.collection("users").updateMany({}, { $set: { password: hash } });
 
     /**
      * This perhaps appears a little more complex than it is. Below, we are
@@ -100,15 +106,18 @@ async function main() {
       }, {
         '$group': {
           '_id': '$_id', 
-          'first name': {
-            '$first': '$first name'
+          'firstName': {
+            '$first': '$firstName'
           }, 
-          'last name': {
-            '$first': '$last name'
+          'lastName': {
+            '$first': '$lastName'
           }, 
           'email': {
             '$first': '$email'
           }, 
+          'password': {
+            '$first': '$password'
+          },
           'competencies': {
             '$push': {
               '_id': '$competencies._id'

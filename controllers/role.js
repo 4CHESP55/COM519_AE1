@@ -28,6 +28,8 @@ exports.list = async (req, res) => {
 
 
         res.render("roles", {
+          page_name: 'Roles',
+          user: req.user,
             roles: roles
         }
 
@@ -55,7 +57,7 @@ exports.edit = async (req, res) => {
     const id = req.params.id;
     try {
       const role = await Role.findById(id)
-      res.render('update-role', { role: role, id: id });
+      res.render('update-role', { role: role, id: id, user: req.user, page_name: 'Roles' });
     } catch (e) {
       res.status(404).send({
         message: `could find role with career ${id}.`,

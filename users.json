@@ -1,8 +1,9 @@
 [
     {
-    "first name": "Paul",
-    "last name": "Chester",
-    "email": "paul.chester@leidos.com",
+    "firstName": "Paul",
+    "lastName": "Chester",
+    "email": "test@test.com",
+    "password": "password",
     "competencies" : [
         {
             "competency": "Writing code",
@@ -42,7 +43,7 @@
           },
           {
             "competency": "Knowledge Sharing",
-            "level": "intermediate"
+            "level": "Intermediate"
           },
           {
             "competency": "Teamwork",

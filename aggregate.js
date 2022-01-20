@@ -62,11 +62,11 @@
   }, {
     '$group': {
       '_id': '$_id', 
-      'first name': {
-        '$first': '$first name'
+      'firstName': {
+        '$first': '$firstName'
       }, 
-      'last name': {
-        '$first': '$last name'
+      'lastName': {
+        '$first': '$lastName'
       }, 
       'email': {
         '$first': '$email'
