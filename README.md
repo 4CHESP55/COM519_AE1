@@ -1,5 +1,5 @@
 # COM519_AE1
-![GitHub](https://img.shields.io/github/license/4CHESP55/COM519_AE1)
+![GitHub](https://img.shields.io/github/license/4chesp55/COM519_AE1)
 
 This is a simple web based application backed up by a monoDB database to manage job competencies.
 
