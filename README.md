@@ -27,7 +27,7 @@ There are two commands to start the node server. One to connect to the developme
 - For production run **npm run start**
 
 ### Logging in
-The website will be hosted at http://localhost:[your port number] where [your port number] is the port number specified in the .env file created.  
+The website will be hosted at http://localhost:[port] where "[port]" is the port number specified in the .env file created.  
 The demo data already contains a user and this can be logged in using the following credentials
 >  email: test@test.com  
 >  password: password  
