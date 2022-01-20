@@ -5,7 +5,7 @@ const express = require("express");
 const path = require("path");
 const chalk = require("chalk");
 const bodyParser = require("body-parser");
-const { PORT, MONGODB_URI } = process.env;
+const { PORT, MONGODB_PRODUCTION_URI, MONGODB_URI } = process.env;
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
@@ -20,7 +20,10 @@ const competencyController = require("./controllers/competency");
 const app = express();
 app.set("view engine", "ejs");
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(
+    process.env.NODE_ENV === "production" ? MONGODB_PRODUCTION_URI : MONGODB_URI, 
+    { useNewUrlParser: true, useUnifiedTopology: true }
+    );
 mongoose.connection.on("error", (err) => {
   console.error(err);
   console.log(
