@@ -21,7 +21,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 mongoose.connect(
-    process.env.NODE_ENV === "production" ? MONGODB_PRODUCTION_URI : MONGODB_URI, 
+    process.env.NODE_ENV === "development" ? MONGODB_URI : MONGODB_PRODUCTION_URI, 
     { useNewUrlParser: true, useUnifiedTopology: true }
     );
 mongoose.connection.on("error", (err) => {
