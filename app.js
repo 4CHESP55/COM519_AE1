@@ -10,7 +10,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 require("./config/passport")(passport)
-const {ensureAuthenticated} = require("./config/auth.js")
+const { ensureAuthenticated } = require("./config/auth.js")
 
 const dashboardController = require("./controllers/dashboard");
 const rolesController = require("./controllers/role");
@@ -21,16 +21,16 @@ const app = express();
 app.set("view engine", "ejs");
 
 mongoose.connect(
-    process.env.NODE_ENV === "development" ? MONGODB_URI : MONGODB_PRODUCTION_URI, 
+    process.env.NODE_ENV === "development" ? MONGODB_URI : MONGODB_PRODUCTION_URI,
     { useNewUrlParser: true, useUnifiedTopology: true }
-    );
+);
 mongoose.connection.on("error", (err) => {
-  console.error(err);
-  console.log(
-    "MongoDB connection error. Please make sure MongoDB is running.",
-    chalk.red("✗")
-  );
-  process.exit();
+    console.error(err);
+    console.log(
+        "MongoDB connection error. Please make sure MongoDB is running.",
+        chalk.red("✗")
+    );
+    process.exit();
 });
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -39,69 +39,80 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 //express session
 app.use(session({
-    secret : 'secret',
-    resave : true,
-    saveUninitialized : true
-   }));
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}));
 
-   app.use(passport.initialize());
+app.use(passport.initialize());
 app.use(passport.session());
-   //use flash
+//use flash
 app.use(flash());
-app.use((req,res,next)=> {
-     res.locals.success_msg = req.flash('success_msg');
-     res.locals.error_msg = req.flash('error_msg');
-     res.locals.error  = req.flash('error');
-   next();
-   })
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
+})
 
 app.get("/", (req, res) => {
-    res.render("index", { errors: {}, user: req.user, page_name: 'Home'});
-  });
+    if (req.user) {
+        res.redirect('/dashboard');
+    } else {
+        res.render("index", { errors: {}, user: req.user, page_name: 'Home' });
+    }
+});
 
-  app.get("/login", (req, res) => {
+app.get("/login", (req, res) => {
     res.render("login", { errors: {}, page_name: 'Login' });
-  });
+});
 
-  app.get("/logout", (req, res) => {
+app.get("/logout", (req, res) => {
     req.logout();
-req.flash('success_msg','Now logged out');
-res.redirect('/login');
-  });
+    req.flash('success_msg', 'You are now logged out');
+    res.redirect('/login');
+});
 
-  app.post("/login", (req, res, next) => {
-    passport.authenticate('local',{
-        successRedirect : '/dashboard',
-        failureRedirect : '/login',
-        failureFlash : true,
-        })(req,res,next);
+app.post("/login", (req, res, next) => {
+    passport.authenticate('local', {
+        successRedirect: '/dashboard',
+        failureRedirect: '/login',
+        failureFlash: true,
+    })(req, res, next);
 
-  });
-  app.get("/register", (req, res) => {
+});
+app.get("/register", (req, res) => {
     res.render("register", { errors: {}, page_name: 'Register' });
-  });
-  app.post("/register", userController.create);
+});
+app.post("/register", userController.create);
 
-  app.get("/dashboard",ensureAuthenticated, dashboardController.list);
-  app.get("/dashboard/edit",ensureAuthenticated, dashboardController.edit);
-  app.get("/dashboard/add",ensureAuthenticated, dashboardController.add);
-  app.post("/dashboard/add",ensureAuthenticated, dashboardController.save);
-  app.get("/dashboard/delete/:id",ensureAuthenticated, dashboardController.delete);
-  app.get("/competencies",ensureAuthenticated, competencyController.list);
-  app.get("/competencies/view/:id",ensureAuthenticated, competencyController.view);
-  app.get("/competencies/edit/:id",ensureAuthenticated, competencyController.edit);
-  app.post("/competencies/edit/:id",ensureAuthenticated, competencyController.save);
-  app.post("/competencies/role/delete/:id",ensureAuthenticated, competencyController.roleDelete);
-  app.post("/competencies/role/add/:id",ensureAuthenticated, competencyController.roleAdd);
-  app.get("/roles",ensureAuthenticated, rolesController.list);
-  app.get("/roles/delete/:id",ensureAuthenticated, rolesController.delete);
+app.get("/dashboard", ensureAuthenticated, dashboardController.list);
+app.get("/dashboard/edit", ensureAuthenticated, dashboardController.edit);
+app.get("/dashboard/add", ensureAuthenticated, dashboardController.add);
+app.post("/dashboard/add", ensureAuthenticated, dashboardController.save);
+app.get("/dashboard/delete/:id", ensureAuthenticated, dashboardController.delete);
+app.get("/competencies", ensureAuthenticated, competencyController.list);
+app.get("/competencies/add", ensureAuthenticated, (req, res) => {
+    res.render("competencies-add", { errors: {}, page_name: 'Competencies', user: req.user });
+});
+app.post("/competencies/add", ensureAuthenticated, competencyController.add);
+app.get("/competencies/view/:id", ensureAuthenticated, competencyController.view);
+app.get("/competencies/edit/:id", ensureAuthenticated, competencyController.edit);
+app.post("/competencies/edit/:id", ensureAuthenticated, competencyController.save);
+app.post("/competencies/role/delete/:id", ensureAuthenticated, competencyController.roleDelete);
+app.post("/competencies/role/add/:id", ensureAuthenticated, competencyController.roleAdd);
+app.post("/competencies/delete", ensureAuthenticated, competencyController.delete);
+app.get("/roles", ensureAuthenticated, rolesController.list);
+app.get("/roles/delete/:id", ensureAuthenticated, rolesController.delete);
+app.get("/roles/deleteLevel/:id", ensureAuthenticated, rolesController.deleteLevel);
+app.post("/roles/add", ensureAuthenticated, rolesController.roleAdd);
 
-  app.get("/update-role/:id",ensureAuthenticated, rolesController.edit);
-  app.post("/update-role/:id",ensureAuthenticated, rolesController.update);
+app.get("/update-role/:id", ensureAuthenticated, rolesController.edit);
+app.post("/update-role/:id", ensureAuthenticated, rolesController.update);
 
 app.listen(PORT, () => {
     console.log(
-      `Example app listening at http://localhost:${PORT}`,
-      chalk.green("✓")
+        `Example app listening at http://localhost:${PORT}`,
+        chalk.green("✓")
     );
-  });
+});

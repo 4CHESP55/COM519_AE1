@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
-    <title>World Wines</title>
+    <title>Job Competency System</title>
 
 
 
@@ -18,152 +18,141 @@
     <link href="css/custom.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="min-vh-100">
     <%- include('common/header'); -%>
-        <section class="gradient-custom p-4 h-100">
-            <div class="container bg-light rounded">
-                <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
-
-                    <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                        <h1 class="display-4">Dashboard</h1>
-                        <p class="lead">
-                            Welcome to your Dashboard. Here you can see the competencies you have currently achieved. You can also see your current role (or what it should be) based on your competencies.
-                        </p>
-                      </div>
-
-                    <div class="col-md-7 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Competencies
-                                </h5>
-
-                                <p class="card-text">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Competency</th>
-                                            <th scope="col">Level</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <% competencies.forEach(competency=> {
-
-                                            %>
-
-                                            <tr>
-                                                <td>
-                                                    <%= competency.competency %>
-                                                </td>
-                                                <td>
-                                                    <%= competency.level %>
-                                                </td>
-                                            </tr>
-
-                                            <% }); %>
-                                    </tbody>
-                                </table>
-
-                                </p>
-                                <a href="/dashboard/edit/" class="btn btn-primary">Edit</a>
-                            </div>
+        <section class="gradient-custom">
+            <%- include ('./partials/messages') %>
+                <div class="container bg-light rounded">
+                    <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
+                        <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4">Dashboard</h1>
+                            <p class="lead">
+                                Welcome to your Dashboard. Here you can see the competencies you have currently
+                                achieved. You can also see your current role (or what it should be) based on your
+                                competencies.
+                            </p>
                         </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="col-md-12 mb-4">
+                        <div class="col-md-7 mb-4">
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">
-                                        <% if(currRoleString != null) {
-                                            %>
-                                        You currently have all the competencies for the carrer level <b>
-                                            <%= currRoleString %>
-                                        </b>
-                                        <% } else { %>
-                                            You do not have enough competencies for any of the career levels
-                                        <% } %>
+                                        Competencies
                                     </h5>
-
                                     <p class="card-text">
-                                    <table class="table table-borderless">
+                                    <table class="table">
                                         <thead>
                                             <tr>
-                                                <th scope="col">Career Level</th>
-                                                <th scope="col">Percentage of Competencies met</th>
+                                                <th scope="col">Competency</th>
+                                                <th scope="col">Level</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                            <% competencies.forEach(competency=> {
 
-                                            <% for (var y=0; y < noMatchLen.length; y++) { %>
+                                                %>
 
-                                                <% for (var x=0; x < matchLen.length; x++) { if
-                                                    (noMatchLen[y][0]==matchLen[x][0]) { var
-                                                    percent=((100/(matchLen[x][1] +
-                                                    noMatchLen[y][1]))*matchLen[x][1]).toFixed(2) %>
-                                                    <tr>
-                                                        <th scope="row">
-                                                            <%= noMatchLen[y][0] %>
-                                                        </th>
-                                                        <td>
-                                                            <div class="progress" style="height: 25px;">
-                                                                <div class="progress-bar" role="progressbar"
-                                                                    style="width: <%= percent %>%"
-                                                                    aria-valuenow="<%= percent %>" aria-valuemin="0"
-                                                                    aria-valuemax="100">
-                                                                    <%= percent %>%
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <% }}}; %>
+                                                <tr>
+                                                    <td>
+                                                        <%= competency.competency %>
+                                                    </td>
+                                                    <td>
+                                                        <%= competency.level %>
+                                                    </td>
+                                                </tr>
+
+                                                <% }); %>
                                         </tbody>
                                     </table>
                                     </p>
+                                    <a href="/dashboard/edit/" class="btn btn-primary">Edit</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12 mb-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="card-text">
-                                        <canvas id="pie"></canvas>
-                                    </p>
+                        <div class="col-md-5">
+                            <div class="col-md-12 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            <% if(currRoleString !=null) { %>
+                                                You currently have all the competencies for the carrer level <b>
+                                                    <%= currRoleString %>
+                                                </b>
+                                                <% } else { %>
+                                                    You do not have enough competencies for any of the career levels
+                                                    <% } %>
+                                        </h5>
+                                        <p class="card-text">
+                                        <table class="table table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Career Level</th>
+                                                    <th scope="col">Percentage of Competencies met</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <% for (var y=0; y < noMatchLen.length; y++) { %>
+
+                                                    <% for (var x=0; x < matchLen.length; x++) { if
+                                                        (noMatchLen[y][0]==matchLen[x][0]) { var
+                                                        percent=((100/(matchLen[x][1] +
+                                                        noMatchLen[y][1]))*matchLen[x][1]).toFixed(2) %>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <%= noMatchLen[y][0] %>
+                                                            </th>
+                                                            <td>
+                                                                <div class="progress" style="height: 25px;">
+                                                                    <div class="progress-bar" role="progressbar"
+                                                                        style="width: <%= percent %>%"
+                                                                        aria-valuenow="<%= percent %>" aria-valuemin="0"
+                                                                        aria-valuemax="100">
+                                                                        <%= percent %>%
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <% }}}; %>
+                                            </tbody>
+                                        </table>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mb-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                            <canvas id="pie"></canvas>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            let competencyLevels = '<%-competencyLevels%>'
+                            const competencyLevelsA = competencyLevels.split(",")
+                            let colours = '<%-competencyColour%>'
+                            const coloursA = colours.split("/,")
+                            let compSize = '<%-competencySizes%>'
+                            const compSizeA = compSize.split(",")
+                            const ctx = document.getElementById('pie');
+                            const pie = new Chart(ctx, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: competencyLevelsA,
+                                    datasets: [{
+                                        label: 'My First Dataset',
+                                        data: compSizeA,
+                                        backgroundColor: coloursA,
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
                     </div>
-
-
-                    <script>
-                        let competencyLevels = '<%-competencyLevels%>'
-                        const competencyLevelsA = competencyLevels.split(",")
-                        let colours = '<%-competencyColour%>'
-                        const coloursA = colours.split("/,")
-                        let compSize = '<%-competencySizes%>'
-                        const compSizeA = compSize.split(",")
-                        const ctx = document.getElementById('pie');
-                        const pie = new Chart(ctx, {
-                            type: 'doughnut',
-                            data: {
-                                labels: competencyLevelsA,
-                                datasets: [{
-                                    label: 'My First Dataset',
-                                    data: compSizeA,
-                                    backgroundColor: coloursA,
-                                    hoverOffset: 4
-                                }]
-                            }
-                        });
-                    </script>
-</div>
-            </div>
+                </div>
         </section>
-        
-
-
-        <!-- PAGINATION ARTICLE: https://evdokimovm.github.io/javascript/nodejs/mongodb/pagination/expressjs/ejs/bootstrap/2017/08/20/create-pagination-with-nodejs-mongodb-express-and-ejs-step-by-step-from-scratch.html-->
-        <!--- https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be-->
         <%- include('common/footer') -%>
 </body>
 

@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/"> Job Competencies </a>
+      <a class="navbar-brand" href="/"> Job Competency System </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,29 +9,32 @@
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <% if (locals.user) { %>
-          <li class="nav-item">
-            <a class="nav-link <% if (page_name === 'Dashboard') { %>active<% } %>" href="/dashboard" tabindex="1">Dashboard</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link <% if (page_name === 'Competencies') { %>active<% } %>" href="/competencies" tabindex="2">Competencies</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link <% if (page_name === 'Roles') { %>active<% } %>" href="/roles" tabindex="3">Roles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/logout" tabindex="4">Log out</a>
-          </li>
-          <% } else { %>
             <li class="nav-item">
-              <a class="nav-link <% if (page_name === 'Home') { %>active<% } %>" href="/">Home</a>
+              <a class="nav-link <% if (page_name === 'Dashboard') { %>active<% } %>" href="/dashboard"
+                tabindex="1">Dashboard</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link <% if (page_name === 'Login') { %>active<% } %>" href="/login" tabindex="4">Login</a>
+              <a class="nav-link <% if (page_name === 'Competencies') { %>active<% } %>" href="/competencies"
+                tabindex="2">Competencies</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link <% if (page_name === 'Register') { %>active<% } %>" href="/register" tabindex="4">Register</a>
+              <a class="nav-link <% if (page_name === 'Roles') { %>active<% } %>" href="/roles" tabindex="3">Roles</a>
             </li>
-            <% } %>
+            <li class="nav-item">
+              <a class="nav-link" href="/logout" tabindex="4">Log out</a>
+            </li>
+            <% } else { %>
+              <li class="nav-item">
+                <a class="nav-link <% if (page_name === 'Home') { %>active<% } %>" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <% if (page_name === 'Login') { %>active<% } %>" href="/login" tabindex="4">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link <% if (page_name === 'Register') { %>active<% } %>" href="/register"
+                  tabindex="4">Register</a>
+              </li>
+              <% } %>
         </ul>
       </div>
     </div>

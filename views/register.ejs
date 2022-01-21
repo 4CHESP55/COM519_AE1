@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
-    <title>World Wines</title>
+    <title>Job Competency System</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/" />
 
@@ -31,16 +31,15 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="min-vh-100">
     <%- include('common/header'); -%>
-
-            <section class="gradient-custom p-4 h-100">
+            <section class="gradient-custom">
                 <div class="container h-100">
                     <div class="row justify-content-sm-center h-100">
                         <div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+                            <%- include ('./partials/messages') %>
                             <div class="card shadow-lg">
                                 <div class="card-body p-5">
-                                    <%- include ('./partials/messages') %>
                                     <h1 class="fs-4 card-title fw-bold mb-4">Register</h1>
                                     <form method="POST" class="needs-validation" novalidate="" autocomplete="off">
                                         <div class="mb-3">

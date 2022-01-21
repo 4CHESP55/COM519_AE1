@@ -4,17 +4,17 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
     {
-       'firstName': String,
-       'lastName': String,
-       email: { type: String, required: [true, 'email is required'], unique: true },
-       password: { type: String, required: [true, 'password is required'] },
-       competencies: 
-       [{
-            _id: {
-                type: mongoose.Schema.Types.ObjectId,
-                ref: "Competency"
-            }
-        }] 
+        'firstName': String,
+        'lastName': String,
+        email: { type: String, required: [true, 'email is required'], unique: true },
+        password: { type: String, required: [true, 'password is required'] },
+        competencies:
+            [{
+                _id: {
+                    type: mongoose.Schema.Types.ObjectId,
+                    ref: "Competency"
+                }
+            }]
     },
     { timestamps: true }
 );
@@ -31,7 +31,6 @@ userSchema.pre('save', async function (next) {
 
 userSchema.pre('insertMany', async function (next) {
     try {
-        console.log(password);
         const hash = await bcrypt.hash(this.password, 10);
         this.password = hash;
         next();

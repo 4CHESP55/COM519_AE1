@@ -5,10 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <title>World Wines</title>
+  <title>Job Competency System</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/" />
-
 
   <!-- Custom styles for this template -->
   <link href="css/custom.css" rel="stylesheet" />
@@ -16,24 +15,27 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <%- include('common/header'); -%>
-
-      <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
-        <main class="px-3 align-middle">
+<body class="min-vh-100">
+  <%- include('common/header'); -%>
+    <section class="bg-dark">
+      <div class="container col-md-6 text-white rounded p-5">
+        <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
           <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Job Competency System</h1>
+            <br>
             <p class="lead">
-              Welcome to the Job competency system. There are many useful things you can do here!
+              Welcome to the Job competency system. There are many useful things you can do here! However you need an account to use it. So please either login or register
+            </p>
+            <br>
+            <p class="lead">
+              <a role="button" class="btn btn-outline-primary btn-lg" href="/register">Register</a>
+              <a role="button" class="btn btn-outline-success btn-lg" href="/login">Login</a>
             </p>
           </div>
-        </main>
-
-          <%- include('common/footer') -%>
+        </div>
       </div>
-      </div>
-
+    </section>
+  <%- include('common/footer') -%>
 </body>
 
 </html>

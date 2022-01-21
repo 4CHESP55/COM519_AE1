@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
-    <title>World Wines</title>
+    <title>Job Competency System</title>
 
 
 
@@ -18,72 +18,65 @@
     <link href="../../css/custom.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="min-vh-100">
     <%- include('common/header'); -%>
-        <section class="gradient-custom p-4 h-100">
-            <div class="container bg-light rounded">
-                <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
+        <section class="gradient-custom">
+            <%- include ('./partials/messages') %>
+                <div class="container bg-light rounded">
+                    <div class="row col-md-12 col-md-offset-2 custyle mx-auto">
 
-                    <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                        <h1 class="display-4">Dashboard - Edit</h1>
-                        <p class="lead">
-                            Here you can remove any of your current competencies and add new ones.
-                        </p>
-                      </div>
+                        <div class=" px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4">Dashboard - Edit</h1>
+                            <p class="lead">
+                                Here you can remove any of your current competencies and add new ones.
+                            </p>
+                        </div>
 
 
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Competencies
-                                </h5>
-
-                                <p class="card-text">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Level</th>
-                                            <th scope="col">Indicator</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <% competencies.forEach(competency=> {
-
-                                            %>
-
+                        <div class="col-md-12 pb-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                    <table class="table">
+                                        <thead>
                                             <tr>
-                                                <td>
-                                                    <%= competency.competency %>
-                                                </td>
-                                                <td>
-                                                    <%= competency.level %>
-                                                </td>
-                                                <td>
-                                                    <a role="button" class="btn btn-danger"
-                                        href="/dashboard/delete/<%= competency._id %>">delete</a>
-                                                </td>
+                                                <th scope="col">Level</th>
+                                                <th scope="col">Indicator</th>
+                                                <th scope="col">Action</th>
                                             </tr>
+                                        </thead>
+                                        <tbody>
 
-                                            <% }); %>
-                                    </tbody>
-                                </table>
-                                <a role="button" class="btn btn-success"
-                                        href="/dashboard/add/">Add Competency</a>
+                                            <% competencies.forEach(competency=> {
 
-                                </p>
+                                                %>
+
+                                                <tr>
+                                                    <td>
+                                                        <%= competency.competency %>
+                                                    </td>
+                                                    <td>
+                                                        <%= competency.level %>
+                                                    </td>
+                                                    <td>
+                                                        <a role="button" class="btn btn-danger"
+                                                            href="/dashboard/delete/<%= competency._id %>">delete</a>
+                                                    </td>
+                                                </tr>
+
+                                                <% }); %>
+                                        </tbody>
+                                    </table>
+                                    <a role="button" class="btn btn-success" href="/dashboard/add/">Add Competency</a>
+
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-</div>
-            </div>
+                </div>
         </section>
 
-
-        <!-- PAGINATION ARTICLE: https://evdokimovm.github.io/javascript/nodejs/mongodb/pagination/expressjs/ejs/bootstrap/2017/08/20/create-pagination-with-nodejs-mongodb-express-and-ejs-step-by-step-from-scratch.html-->
-        <!--- https://medium.com/swlh/master-ejs-template-engine-with-node-js-and-expressjs-979cc22b69be-->
         <%- include('common/footer') -%>
 </body>
 

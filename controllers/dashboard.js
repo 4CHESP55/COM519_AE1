@@ -7,9 +7,9 @@ exports.list = async (req, res) => {
         const user = req.user
 
         const competenciesId = [];
-            user.competencies.forEach(competency => {
-                competenciesId.push(competency._id);
-            });
+        user.competencies.forEach(competency => {
+            competenciesId.push(competency._id);
+        });
         const competencies = await Competency.find({ '_id': { $in: competenciesId } });
 
         const roles = await Role.aggregate([
@@ -103,11 +103,6 @@ exports.list = async (req, res) => {
         }
 
         const currRoleString = currRole1D.sort().reverse()[0]
-
-        console.log(currRoleString)
-
-
-
         const competencyNames = [];
         const competencyLevels = [];
         const competencyColour = [];
@@ -168,7 +163,7 @@ exports.list = async (req, res) => {
         }
 
         );
-    }catch (e) {
+    } catch (e) {
         res.status(404).send({ message: "could not list competencies" });
     }
 };
@@ -178,9 +173,9 @@ exports.edit = async (req, res) => {
         const user = req.user
 
         const competenciesId = [];
-            user.competencies.forEach(competency => {
-                competenciesId.push(competency._id);
-            });
+        user.competencies.forEach(competency => {
+            competenciesId.push(competency._id);
+        });
         const competencies = await Competency.find({ '_id': { $in: competenciesId } });
 
         res.render("dashboard-edit", {
@@ -188,36 +183,36 @@ exports.edit = async (req, res) => {
             user: req.user,
             competencies: competencies
         });
-    }catch (e) {
+    } catch (e) {
         res.status(404).send({ message: "could not list competencies" });
     }
 };
 
 exports.delete = async (req, res) => {
-  
+
     try {
         const id = req.params.id;
         const user = req.user
 
-        await User.updateOne( {  _id: user._id}, { $pull : { competencies : { _id :  id } } } );
-  
-         res.redirect("/dashboard/edit");
+        await User.updateOne({ _id: user._id }, { $pull: { competencies: { _id: id } } });
+        req.flash('success_msg', 'Competency removed!')
+        res.redirect("/dashboard/edit");
     } catch (e) {
-      res.status(404).send({
-        message: `could not remove competency ${id}.`,
-      });
+        res.status(404).send({
+            message: `could not remove competency ${id}.`,
+        });
     }
-  };
+};
 
 exports.add = async (req, res) => {
     try {
-        const competencies = await Competency.find({}).sort({competency: 1});
+        const competencies = await Competency.find({}).sort({ competency: 1 });
         res.render("dashboard-add", {
             page_name: 'Dashboard',
             user: req.user,
             competencies: competencies
         });
-    }catch (e) {
+    } catch (e) {
         res.status(404).send({ message: "could not list competencies" });
     }
 };
@@ -226,9 +221,10 @@ exports.save = async (req, res) => {
     try {
         const user = req.user
         const id = req.body.id;
-        await User.updateOne( {  _id: user._id}, { $push : { competencies : { _id :  id } } } );
-         res.redirect("/dashboard/edit");
-    }catch (e) {
+        await User.updateOne({ _id: user._id }, { $push: { competencies: { _id: id } } });
+        req.flash('success_msg', 'Competency has been added!')
+        res.redirect("/dashboard/edit");
+    } catch (e) {
         res.status(404).send({ message: "could not add competency" });
     }
 };

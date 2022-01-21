@@ -3,10 +3,10 @@ const { Schema } = mongoose;
 
 const roleSchema = new Schema(
     {
-       career: String,
-       role: String,
-       competency: String,
-       level: String
+        career: String,
+        role: String,
+        competency: String,
+        level: String
     },
     { timestamps: true }
 );
